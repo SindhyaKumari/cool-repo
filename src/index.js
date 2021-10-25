@@ -1,30 +1,41 @@
-// const sayHello = (name = "Haz") => `Hello, ${name}!`;
-
-// export default sayHello;
-
 const prompt = require("prompt-sync")({ sigint: true });
 
-const integersString = prompt(
-  "Input any number of integers separated by single whitespace such as 6 1 5 3 2: "
-);
-console.log("integersString :>> ", integersString);
+const integersString = prompt("Input any number of integers separated space: ");
 
-// function name(params) {
+const validateInput = strVal => /^(?=.*\d)[\d ]+$/.test(strVal);
 
-// }
+const bisetRightsortedIndex = (arr, value) => {
+  let low = 0;
+  let high = arr.length;
 
-// }
-// const name = (params) => {}
+  while (low < high) {
+    const mid = Math.floor((low + high) / 2);
 
-// map
-// filter
-// reduce
+    if (value < arr[mid]) high = mid;
+    else low = mid + 1;
+  }
+  return low;
+};
 
-// for (let index = 0; index < array.length; index++) {
-//     const element = array[index];
+const lis = str => {
+  const arr = str.split(" ").map(i => +i);
+  if (!arr.length && validateInput(integersString)) {
+    return 0;
+  }
+  const [a, ...rest] = arr;
+  const l = [[a]];
+  rest.forEach(element => {
+    const last = l[l.length - 1];
+    const pos = bisetRightsortedIndex(last, element);
 
-// }
+    if (pos === l.length && element > l[pos - 1][pos - 1]) {
+      l.push([...l[pos - 1], element]);
+    }
+    if (pos === 0 || element !== l[pos - 1][pos - 1]) {
+      l[pos][pos] = element;
+    }
+  });
+  return l.pop();
+};
 
-// array.forEach(element => {
-
-// });
+console.log(lis(integersString));
