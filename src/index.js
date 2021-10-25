@@ -1,8 +1,8 @@
-const prompt = require("prompt-sync")({ sigint: true });
+// const prompt = require("prompt-sync")({ sigint: true });
 
-const integersString = prompt("Input any number of integers separated space: ");
+// const integersString = prompt("Input any number of integers separated space: ");
 
-const validateInput = strVal => /^(?=.*\d)[\d ]+$/.test(strVal);
+// const validateInput = strVal => /^(?=.*\d)[\d ]+$/.test(strVal);
 
 const bisetRightsortedIndex = (arr, value) => {
   let low = 0;
@@ -17,9 +17,9 @@ const bisetRightsortedIndex = (arr, value) => {
   return low;
 };
 
-const lis = str => {
+export default function(str) {
   const arr = str.split(" ").map(i => +i);
-  if (!arr.length && validateInput(integersString)) {
+  if (!arr.length) {
     return 0;
   }
   const [a, ...rest] = arr;
@@ -36,6 +36,6 @@ const lis = str => {
     }
   });
   return l.pop();
-};
+}
 
-console.log(lis(integersString));
+// console.log(lis(integersString));

@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test longest incresing subsequence 1`] = `
+Array [
+  1,
+  5,
+  9,
+]
+`;
+
+exports[`test longest incresing subsequence 2`] = `
+Array [
+  0,
+  13499,
+  14148,
+  22496,
+  23300,
+  24976,
+  25043,
+  28800,
+  30270,
+  31584,
+  31680,
+  32302,
+  32402,
+  32411,
+  32497,
+  32534,
+  32588,
+  32600,
+  32628,
+  32637,
+]
+`;
+
+exports[`test longest incresing subsequence 3`] = `
+Array [
+  2311,
+  11333,
+  14555,
+  16326,
+  24423,
+  26729,
+  31009,
+  31696,
+  32340,
+  32531,
+  32571,
+  32575,
+  32612,
+  32630,
+  32657,
+  32664,
+  32670,
+  32686,
+  32711,
+]
+`;
+
+exports[`test longest incresing subsequence 4`] = `
+Array [
+  923,
+  11613,
+  19569,
+  24201,
+  30793,
+  31469,
+  31606,
+]
+`;
+
+exports[`test longest incresing subsequence 5`] = `
+Array [
+  11084,
+  11970,
+  24975,
+  27101,
+  27193,
+  28856,
+  30896,
+  31309,
+  31463,
+  32041,
+]
+`;
+
+exports[`test longest incresing subsequence 6`] = `
+Array [
+  1184,
+  1537,
+  9856,
+  18201,
+  21808,
+  25158,
+  30688,
+  30958,
+  31156,
+  31365,
+  31460,
+  32605,
+]
+`;
+
+exports[`test longest incresing subsequence 7`] = `
+Array [
+  8618,
+  18885,
+  18979,
+  25375,
+  26028,
+  28484,
+  29856,
+  30938,
+  31883,
+  32543,
+  32551,
+]
+`;
+
+exports[`test longest incresing subsequence 8`] = `
+Array [
+  11509,
+  13451,
+  15160,
+  24317,
+  27378,
+  27592,
+  30937,
+  32418,
+  32449,
+  32558,
+  32637,
+  32699,
+]
+`;
+
+exports[`test longest incresing subsequence 9`] = `
+Array [
+  17567,
+  24252,
+  25924,
+  25928,
+  29363,
+  31720,
+  31913,
+  32013,
+  32256,
+  32298,
+  32363,
+  32458,
+  32472,
+  32605,
+  32701,
+  32702,
+  32719,
+  32724,
+  32725,
+  32741,
+  32743,
+  32762,
+]
+`;
+
+exports[`test longest incresing subsequence 10`] = `
+Array [
+  2,
+  4,
+  5,
+  9,
+]
+`;
+
+exports[`test longest incresing subsequence 11`] = `
+Array [
+  2,
+  3,
+  5,
+  9,
+]
+`;
